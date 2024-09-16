@@ -6,13 +6,16 @@
 #include "styles.h"
 #include "ui.h"
 
+#include <string.h>
+
 objects_t objects;
 lv_obj_t *tick_value_change_obj;
 
 static void event_handler_cb_main_button_click(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
-    void *flowState = e->user_data;
+    void *flowState = lv_event_get_user_data(e);
     if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
         action_button_click_action(e);
     }
 }
@@ -23,14 +26,13 @@ void create_screen_main() {
     objects.main = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 800, 480);
-    lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
     {
         lv_obj_t *parent_obj = obj;
         {
             lv_obj_t *obj = lv_label_create(parent_obj);
             lv_obj_set_pos(obj, 36, 21);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_label_set_text(obj, "Starter App for 7\" Panel using EEZ-Open");
+            lv_label_set_text(obj, "Henry test 7 inch Elecrown");
             lv_obj_set_style_text_color(obj, lv_color_hex(0xff212121), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_text_font(obj, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
@@ -41,8 +43,6 @@ void create_screen_main() {
             lv_obj_set_pos(obj, 98, 128);
             lv_obj_set_size(obj, 102, 40);
             lv_obj_add_event_cb(obj, event_handler_cb_main_button_click, LV_EVENT_ALL, flowState);
-            lv_obj_add_flag(obj, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
-            lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
         }
         {
             lv_obj_t *obj = lv_label_create(parent_obj);

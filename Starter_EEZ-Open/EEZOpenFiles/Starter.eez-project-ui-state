@@ -118,6 +118,7 @@
                   "type": "tabset",
                   "id": "#447f4857-d420-43b1-8ba9-08db51d85a22",
                   "weight": 1,
+                  "selected": 2,
                   "enableClose": false,
                   "children": [
                     {
@@ -941,9 +942,8 @@
     "[Starter.eez-project]:/userPages/0[flow-state]": {
       "selection": {
         "0": {
-          "3": {
-            "$selected": true
-          }
+          "0": {},
+          "3": {}
         }
       },
       "transform": {

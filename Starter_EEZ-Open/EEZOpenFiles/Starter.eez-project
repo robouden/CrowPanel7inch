@@ -17,6 +17,7 @@
       "flowSupport": true,
       "displayWidth": 800,
       "displayHeight": 480,
+      "displayBorderRadius": 0,
       "colorFormat": "BGR",
       "resourceFiles": []
     },
@@ -155,7 +156,7 @@
               "type": "LVGLLabelWidget",
               "left": 36,
               "top": 21,
-              "width": 580,
+              "width": 384,
               "height": 30,
               "customInputs": [],
               "customOutputs": [],
@@ -172,7 +173,7 @@
               "widthUnit": "content",
               "heightUnit": "content",
               "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
               "hiddenFlagType": "literal",
               "clickableFlagType": "literal",
               "checkedStateType": "literal",
@@ -189,7 +190,7 @@
                   }
                 }
               },
-              "text": "Starter App for 7\" Panel using EEZ-Open",
+              "text": "Henry test 7 inch Elecrown",
               "textType": "literal",
               "longMode": "WRAP",
               "recolor": false
@@ -197,8 +198,8 @@
             {
               "objID": "6740a53b-f300-46c4-9ec4-381c65271ba8",
               "type": "LVGLButtonWidget",
-              "left": 98,
-              "top": 128,
+              "left": 36,
+              "top": 89,
               "width": 102,
               "height": 40,
               "customInputs": [],
@@ -215,7 +216,8 @@
                   "objID": "3265df85-0e7c-4799-bd3e-3cbc4a7d3ef7",
                   "eventName": "PRESSED",
                   "handlerType": "action",
-                  "action": "buttonClickAction"
+                  "action": "buttonClickAction",
+                  "userData": 0
                 }
               ],
               "identifier": "buttonClick",
@@ -224,7 +226,7 @@
               "widthUnit": "px",
               "heightUnit": "px",
               "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC|SCROLL_ON_FOCUS|SCROLL_MOMENTUM|SCROLL_CHAIN",
+              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
               "hiddenFlagType": "literal",
               "clickableFlag": true,
               "clickableFlagType": "literal",
@@ -240,8 +242,8 @@
             {
               "objID": "dddadb3d-3125-4f6e-af19-158c725eaa07",
               "type": "LVGLLabelWidget",
-              "left": 111,
-              "top": 138,
+              "left": 49,
+              "top": 99,
               "width": 77,
               "height": 21,
               "customInputs": [],
@@ -259,7 +261,7 @@
               "widthUnit": "content",
               "heightUnit": "content",
               "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
               "hiddenFlagType": "literal",
               "clickableFlagType": "literal",
               "flagScrollbarMode": "",
@@ -287,9 +289,9 @@
             {
               "objID": "af54a8f0-9e65-43cf-daeb-3787bbbb36bb",
               "type": "LVGLLabelWidget",
-              "left": 135,
-              "top": 199,
-              "width": 14,
+              "left": 172,
+              "top": 89,
+              "width": 25,
               "height": 41,
               "customInputs": [],
               "customOutputs": [],
@@ -308,7 +310,7 @@
               "widthUnit": "content",
               "heightUnit": "content",
               "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
               "hiddenFlagType": "literal",
               "clickableFlagType": "literal",
               "flagScrollbarMode": "",
@@ -331,10 +333,10 @@
               "textType": "expression",
               "longMode": "WRAP",
               "recolor": false,
-              "previewValue": "1"
+              "previewValue": "0"
             }
           ],
-          "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
+          "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER",
           "hiddenFlagType": "literal",
           "clickableFlag": true,
           "clickableFlagType": "literal",
