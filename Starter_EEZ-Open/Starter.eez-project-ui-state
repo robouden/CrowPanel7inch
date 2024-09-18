@@ -1,11 +1,11 @@
 {
   "navigation": {
     "selectedUserPageObject": "[Starter.eez-project]:/userPages/0",
-    "selectedActionObject": "[Starter.eez-project]:/actions/0",
+    "selectedActionObject": "[Starter.eez-project]:/actions/1",
     "selectedGlobalVariableObject": "[Starter.eez-project]:/variables/globalVariables/0",
     "selectedBitmapObject": "[Starter.eez-project]:/bitmaps/2",
     "subnavigationSelectedItems": {
-      "variables-tab/sub-navigation/selected-item": "Actions"
+      "variables-tab/sub-navigation/selected-item": "Widgets"
     }
   },
   "layoutModel": {
@@ -120,7 +120,7 @@
                   "type": "tabset",
                   "id": "#447f4857-d420-43b1-8ba9-08db51d85a22",
                   "weight": 1,
-                  "selected": 1,
+                  "selected": 2,
                   "enableClose": false,
                   "children": [
                     {
@@ -187,10 +187,21 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 66.08899297423888,
-              "selected": 2,
+              "selected": 3,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
+                {
+                  "type": "tab",
+                  "id": "#66e71aa6-6f99-4aa0-99db-b9b5ae36cc78",
+                  "name": "[NATIVE] buttonClickAction_1",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[Starter.eez-project]:/actions/1",
+                    "permanent": false
+                  },
+                  "icon": "material:code"
+                },
                 {
                   "type": "tab",
                   "id": "#fd6aa695-f2a6-458c-b66f-cb694b46f30e",
@@ -236,7 +247,7 @@
                 {
                   "type": "tabset",
                   "id": "#02c95338-1674-4f8c-a7d1-0c44bc8e4d10",
-                  "weight": 1.3115577889447236,
+                  "weight": 2.120603015075377,
                   "children": [
                     {
                       "type": "tab",
@@ -251,7 +262,7 @@
                 {
                   "type": "tabset",
                   "id": "#64a9c8e9-9104-4357-b781-4c2fe18dc352",
-                  "weight": 1.6884422110552764,
+                  "weight": 0.8793969849246231,
                   "children": [
                     {
                       "type": "tab",
@@ -981,6 +992,16 @@
     "[Starter.eez-project]:/lvglStyles/styles[tree-state]": {
       "0": {
         "$selected": true
+      }
+    },
+    "[Starter.eez-project]:/actions/1[flow-state]": {
+      "selection": {},
+      "transform": {
+        "translate": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1
       }
     }
   },
