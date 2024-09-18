@@ -153,6 +153,46 @@
           "heightUnit": "px",
           "children": [
             {
+              "objID": "18a80cee-0f38-4ed5-fbab-9f2404fbaf7b",
+              "type": "LVGLImageWidget",
+              "left": 595,
+              "top": 288,
+              "width": 160,
+              "height": 160,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "04b8e938-fe61-44bb-cd83-3eb59f37cf94",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "content",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "ADV_HITTEST|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "fffd3239-0def-400f-a016-cf16e8af07e6"
+              },
+              "image": "Blue Bird small",
+              "pivotX": 0,
+              "pivotY": 0,
+              "zoom": 256,
+              "angle": 0,
+              "innerAlign": "CENTER"
+            },
+            {
               "objID": "6b272cb8-48b4-467f-c130-a1edc1f930b7",
               "type": "LVGLLabelWidget",
               "left": 36,
@@ -340,20 +380,66 @@
               "previewValue": "0"
             },
             {
-              "objID": "18a80cee-0f38-4ed5-fbab-9f2404fbaf7b",
-              "type": "LVGLImageWidget",
-              "left": 595,
-              "top": 288,
-              "width": 160,
-              "height": 160,
+              "objID": "d1d95f84-ee94-4ae1-87fa-abaa013327a6",
+              "type": "LVGLButtonWidget",
+              "left": 36,
+              "top": 394,
+              "width": 149,
+              "height": 40,
               "customInputs": [],
               "customOutputs": [],
               "style": {
-                "objID": "04b8e938-fe61-44bb-cd83-3eb59f37cf94",
+                "objID": "baeaf9a6-017b-4997-c8e2-abcb29d651c8",
                 "useStyle": "default",
                 "conditionalStyles": [],
                 "childStyles": []
               },
+              "hiddenInEditor": false,
+              "timeline": [],
+              "eventHandlers": [
+                {
+                  "objID": "3822eba3-78f0-45c2-d1da-92c8d0256c96",
+                  "eventName": "PRESSED",
+                  "handlerType": "action",
+                  "action": "buttonClickAction",
+                  "userData": 1
+                }
+              ],
+              "identifier": "buttonClick_1",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "px",
+              "children": [],
+              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlag": true,
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "7604bebf-efaf-4169-e31e-377475076eb1"
+              }
+            },
+            {
+              "objID": "787d04eb-69a4-4865-dffc-0d72f2a2d52d",
+              "type": "LVGLLabelWidget",
+              "left": 57,
+              "top": 404,
+              "width": 108,
+              "height": 21,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "b08ab414-f45e-4505-94f8-cbac837d3c06",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "hiddenInEditor": false,
               "timeline": [],
               "eventHandlers": [],
               "leftUnit": "px",
@@ -361,7 +447,7 @@
               "widthUnit": "content",
               "heightUnit": "content",
               "children": [],
-              "widgetFlags": "ADV_HITTEST|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
               "hiddenFlagType": "literal",
               "clickableFlagType": "literal",
               "flagScrollbarMode": "",
@@ -370,14 +456,21 @@
               "disabledStateType": "literal",
               "states": "",
               "localStyles": {
-                "objID": "fffd3239-0def-400f-a016-cf16e8af07e6"
+                "objID": "047a508b-0b2e-43d5-a009-5e246b7a965e",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "#ffffff",
+                      "text_align": "CENTER",
+                      "text_font": "MONTSERRAT_18"
+                    }
+                  }
+                }
               },
-              "image": "Blue Bird small",
-              "pivotX": 0,
-              "pivotY": 0,
-              "zoom": 256,
-              "angle": 0,
-              "innerAlign": "CENTER"
+              "text": "Put to sleep",
+              "textType": "literal",
+              "longMode": "WRAP",
+              "recolor": false
             }
           ],
           "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER",

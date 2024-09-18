@@ -10,6 +10,7 @@ extern "C" {
 typedef struct _objects_t {
     lv_obj_t *main;
     lv_obj_t *button_click;
+    lv_obj_t *button_click_1;
     lv_obj_t *label_count;
 } objects_t;
 

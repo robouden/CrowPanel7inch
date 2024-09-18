@@ -5,7 +5,7 @@
     "selectedGlobalVariableObject": "[Starter.eez-project]:/variables/globalVariables/0",
     "selectedBitmapObject": "[Starter.eez-project]:/bitmaps/2",
     "subnavigationSelectedItems": {
-      "variables-tab/sub-navigation/selected-item": "Widgets"
+      "variables-tab/sub-navigation/selected-item": "Actions"
     }
   },
   "layoutModel": {
@@ -67,7 +67,7 @@
           {
             "type": "border",
             "selected": 0,
-            "size": 104.5,
+            "size": 36.5,
             "location": "bottom",
             "children": [
               {
@@ -120,7 +120,7 @@
                   "type": "tabset",
                   "id": "#447f4857-d420-43b1-8ba9-08db51d85a22",
                   "weight": 1,
-                  "selected": 2,
+                  "selected": 1,
                   "enableClose": false,
                   "children": [
                     {
@@ -186,7 +186,7 @@
             {
               "type": "tabset",
               "id": "EDITORS",
-              "weight": 60.259574468085106,
+              "weight": 66.08899297423888,
               "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
@@ -231,12 +231,12 @@
             {
               "type": "row",
               "id": "#109e0f3b-b500-4571-bc15-5a470cce5ae6",
-              "weight": 24.740425531914894,
+              "weight": 18.911007025761123,
               "children": [
                 {
                   "type": "tabset",
                   "id": "#02c95338-1674-4f8c-a7d1-0c44bc8e4d10",
-                  "weight": 1.6427289048473968,
+                  "weight": 1.3115577889447236,
                   "children": [
                     {
                       "type": "tab",
@@ -251,7 +251,7 @@
                 {
                   "type": "tabset",
                   "id": "#64a9c8e9-9104-4357-b781-4c2fe18dc352",
-                  "weight": 1.3572710951526032,
+                  "weight": 1.6884422110552764,
                   "children": [
                     {
                       "type": "tab",
@@ -428,8 +428,7 @@
                       "enableClose": false,
                       "icon": "material:code"
                     }
-                  ],
-                  "active": true
+                  ]
                 },
                 {
                   "type": "tabset",
@@ -481,7 +480,8 @@
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "row",
@@ -947,17 +947,17 @@
     "[Starter.eez-project]:/userPages/0[flow-state]": {
       "selection": {
         "0": {
-          "0": {},
-          "2": {
-            "$selected": true
-          },
-          "3": {}
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {}
         }
       },
       "transform": {
         "translate": {
           "x": -306.6050000000001,
-          "y": -228
+          "y": -348
         },
         "scale": 1
       },
@@ -991,7 +991,7 @@
   "replaceEnabled": false,
   "replaceText": "",
   "pageEditorFrontFace": false,
-  "pageRuntimeFrontFace": false,
+  "pageRuntimeFrontFace": true,
   "breakpoints": {},
   "watchExpressions": [],
   "showComponentDescriptions": true,

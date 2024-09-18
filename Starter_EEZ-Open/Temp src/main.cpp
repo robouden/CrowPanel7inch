@@ -5,22 +5,25 @@
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include "ui/ui.h"
+#include "ui/vars.h"
+#include "ui/actions.h" 
 #include "lgfx/lgfx.h"
 
 // Setup the panel.
 void setup()
 {
   // Three second delay to wait for serial monitor to be running.  Not sure this is necessary going forward
-  delay(1000);
+  // delay(100);
   Serial.begin(115200);
-  delay(2000);
+  // delay(100);
 
   Serial.println("Running setup...");
+  set_var_label_count_value("-");
 
   // Setup the panel
   lcd.setup();
 
-  // Initialize the Square Line UI
+  // Initialize the UI
   ui_init();
 
   // Run the LVGL timer handler once to get things started
@@ -29,18 +32,36 @@ void setup()
 
 int clickCount = 0;
 
-// Handle Click event
-void clickedClickMe(lv_event_t *e)
+char labelValue[512];
+extern const char *get_var_label_count_value()
 {
+  return labelValue;
+}
+extern void set_var_label_count_value(const char *value)
+{
+  Serial.println("set_var_label_count_value");
+  Serial.println(value);
+  strlcpy(labelValue, value, sizeof(labelValue));
+}
+
+// Handle Click event
+void action_button_click_action(lv_event_t *e)
+{
+  Serial.println("action_button_click_action");
   clickCount++;
   char ClickBuffer[20];
   snprintf(ClickBuffer, sizeof(ClickBuffer), "%d", clickCount);
-  lv_label_set_text(ui_LabelCount, ClickBuffer);
+  set_var_label_count_value(ClickBuffer);
+
+    lv_event_code_t code = lv_event_get_code(e);
+    char userdata = lv_event_get_user_data(e);
 }
+
 
 // Run Ardunio event loop
 void loop()
 {
+  ui_tick();
   lv_timer_handler(); /* let the GUI do its work */
   delay(10);
 }

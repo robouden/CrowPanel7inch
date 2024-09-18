@@ -54,6 +54,14 @@ void action_button_click_action(lv_event_t *e)
   set_var_label_count_value(ClickBuffer);
 }
 
+// Handle Click event
+void action_button_click_action_1(lv_event_t *e)
+{
+  Serial.println("action_button_sleeping");
+  esp_sleep_enable_timer_wakeup(10 * 1000000); //light sleep for 2 seconds
+  esp_deep_sleep_start();  
+}
+
 // Run Ardunio event loop
 void loop()
 {
