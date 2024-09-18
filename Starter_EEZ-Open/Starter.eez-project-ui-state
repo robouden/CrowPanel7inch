@@ -3,6 +3,7 @@
     "selectedUserPageObject": "[Starter.eez-project]:/userPages/0",
     "selectedActionObject": "[Starter.eez-project]:/actions/0",
     "selectedGlobalVariableObject": "[Starter.eez-project]:/variables/globalVariables/0",
+    "selectedBitmapObject": "[Starter.eez-project]:/bitmaps/2",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Widgets"
     }
@@ -25,7 +26,8 @@
           },
           {
             "type": "border",
-            "size": 240,
+            "selected": 2,
+            "size": 231.5,
             "location": "right",
             "children": [
               {
@@ -65,7 +67,7 @@
           {
             "type": "border",
             "selected": 0,
-            "size": 119.5,
+            "size": 104.5,
             "location": "bottom",
             "children": [
               {
@@ -184,7 +186,7 @@
             {
               "type": "tabset",
               "id": "EDITORS",
-              "weight": 60,
+              "weight": 60.259574468085106,
               "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
@@ -204,7 +206,7 @@
                 {
                   "type": "tab",
                   "id": "#da74be1b-fb18-4b5f-af15-6d6320ef2cd8",
-                  "name": "buttonClickAction",
+                  "name": "[NATIVE] buttonClickAction",
                   "component": "editor",
                   "config": {
                     "objectPath": "[Starter.eez-project]:/actions/0",
@@ -229,12 +231,12 @@
             {
               "type": "row",
               "id": "#109e0f3b-b500-4571-bc15-5a470cce5ae6",
-              "weight": 25,
+              "weight": 24.740425531914894,
               "children": [
                 {
                   "type": "tabset",
                   "id": "#02c95338-1674-4f8c-a7d1-0c44bc8e4d10",
-                  "weight": 2,
+                  "weight": 1.6427289048473968,
                   "children": [
                     {
                       "type": "tab",
@@ -249,7 +251,7 @@
                 {
                   "type": "tabset",
                   "id": "#64a9c8e9-9104-4357-b781-4c2fe18dc352",
-                  "weight": 1,
+                  "weight": 1.3572710951526032,
                   "children": [
                     {
                       "type": "tab",
@@ -400,6 +402,7 @@
                   "type": "tabset",
                   "id": "#61204b76-4784-4eb3-bf84-b4c226b9cd57",
                   "weight": 1,
+                  "selected": 1,
                   "children": [
                     {
                       "type": "tab",
@@ -425,7 +428,8 @@
                       "enableClose": false,
                       "icon": "material:code"
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -477,8 +481,7 @@
                   },
                   "icon": "svg:page"
                 }
-              ],
-              "active": true
+              ]
             },
             {
               "type": "row",
@@ -563,7 +566,8 @@
                       "component": "bitmaps",
                       "enableClose": false
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -790,7 +794,8 @@
                       "component": "styles",
                       "enableClose": false
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -943,12 +948,15 @@
       "selection": {
         "0": {
           "0": {},
+          "2": {
+            "$selected": true
+          },
           "3": {}
         }
       },
       "transform": {
         "translate": {
-          "x": -400,
+          "x": -306.6050000000001,
           "y": -228
         },
         "scale": 1
@@ -965,9 +973,14 @@
       "transform": {
         "translate": {
           "x": 0,
-          "y": 0
+          "y": -720
         },
         "scale": 1
+      }
+    },
+    "[Starter.eez-project]:/lvglStyles/styles[tree-state]": {
+      "0": {
+        "$selected": true
       }
     }
   },
@@ -978,7 +991,7 @@
   "replaceEnabled": false,
   "replaceText": "",
   "pageEditorFrontFace": false,
-  "pageRuntimeFrontFace": true,
+  "pageRuntimeFrontFace": false,
   "breakpoints": {},
   "watchExpressions": [],
   "showComponentDescriptions": true,

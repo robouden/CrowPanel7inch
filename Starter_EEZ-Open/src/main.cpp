@@ -13,9 +13,9 @@
 void setup()
 {
   // Three second delay to wait for serial monitor to be running.  Not sure this is necessary going forward
-  delay(1000);
+  // delay(100);
   Serial.begin(115200);
-  delay(2000);
+  // delay(100);
 
   Serial.println("Running setup...");
   set_var_label_count_value("-");
