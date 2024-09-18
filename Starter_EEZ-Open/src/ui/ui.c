@@ -66,6 +66,7 @@ native_var_t native_vars[] = {
 
 ActionExecFunc actions[] = {
     action_button_click_action,
+    action_button_click_action_1,
 };
 
 

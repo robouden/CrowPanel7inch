@@ -124,6 +124,14 @@
       "localVariables": [],
       "name": "buttonClickAction",
       "implementationType": "native"
+    },
+    {
+      "objID": "9582f2ab-eaa3-4739-a748-b8646a16cdda",
+      "components": [],
+      "connectionLines": [],
+      "localVariables": [],
+      "name": "buttonClickAction_1",
+      "implementationType": "native"
     }
   ],
   "userPages": [
@@ -401,7 +409,7 @@
                   "objID": "3822eba3-78f0-45c2-d1da-92c8d0256c96",
                   "eventName": "PRESSED",
                   "handlerType": "action",
-                  "action": "buttonClickAction",
+                  "action": "buttonClickAction_1",
                   "userData": 1
                 }
               ],
