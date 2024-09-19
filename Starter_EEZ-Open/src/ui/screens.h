@@ -9,10 +9,11 @@ extern "C" {
 
 typedef struct _objects_t {
     lv_obj_t *main;
-    lv_obj_t *button_click;
-    lv_obj_t *button_click_1;
+    lv_obj_t *click_count_up;
     lv_obj_t *label_count;
-    lv_obj_t *obj0;
+    lv_obj_t *put_to_sleep;
+    lv_obj_t *slider_test;
+    lv_obj_t *wake_up_screen;
 } objects_t;
 
 extern objects_t objects;

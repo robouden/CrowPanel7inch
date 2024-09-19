@@ -44,10 +44,10 @@ extern void set_var_label_count_value(const char *value)
   strlcpy(labelValue, value, sizeof(labelValue));
 }
 
-// Handle Click event
+// Handle Click event for counts and screen wakeup
 void action_button_click_action(lv_event_t *e)
 {
-  Serial.println("action_button_click_action");
+  Serial.println("action_button_click_action_count_plus");
   clickCount++;
   char ClickBuffer[20];
   snprintf(ClickBuffer, sizeof(ClickBuffer), "%d", clickCount);
@@ -57,17 +57,23 @@ void action_button_click_action(lv_event_t *e)
 // Handle Click event
 void action_button_click_action_1(lv_event_t *e)
 {
-//goto screen blank and switch off
+//goto screen blank 
+  Serial.println("action_button_sleeping"); 
     digitalWrite(2, LOW);
 }
 
-// Handle Click event
+// Handle Click event for wakeup
 void action_button_click_action_2(lv_event_t *e)
 {
-  Serial.println("action_button_sleeping");
-  // esp_sleep_enable_timer_wakeup(5 * 1000000); //light sleep for 5 seconds
-  // esp_sleep_enable_ext0_wakeup(GPIO_NUM_38, 0);
-  // esp_deep_sleep_start();  
+   Serial.println("action_button_waking up"); 
+    digitalWrite(2, HIGH);
+}
+
+// Handle Click event for wakeup
+void action_button_click_action_3(lv_event_t *e)
+{
+   Serial.println("action_button_slider"); 
+
     digitalWrite(2, HIGH);
 }
 

@@ -140,6 +140,14 @@
       "localVariables": [],
       "name": "buttonClickAction_2",
       "implementationType": "native"
+    },
+    {
+      "objID": "3d67c6d2-bf72-4f30-ec08-b4734e2aafeb",
+      "components": [],
+      "connectionLines": [],
+      "localVariables": [],
+      "name": "buttonClickAction_3",
+      "implementationType": "native"
     }
   ],
   "userPages": [
@@ -193,6 +201,7 @@
                   "userData": 0
                 }
               ],
+              "identifier": "Wake up screen",
               "leftUnit": "px",
               "topUnit": "px",
               "widthUnit": "px",
@@ -376,7 +385,7 @@
                   "userData": 0
                 }
               ],
-              "identifier": "buttonClick",
+              "identifier": "Click count up",
               "leftUnit": "px",
               "topUnit": "px",
               "widthUnit": "px",
@@ -519,7 +528,7 @@
                   "userData": 1
                 }
               ],
-              "identifier": "buttonClick_1",
+              "identifier": "Put to sleep",
               "leftUnit": "px",
               "topUnit": "px",
               "widthUnit": "px",
@@ -586,6 +595,58 @@
               "localStyles": {
                 "objID": "7604bebf-efaf-4169-e31e-377475076eb1"
               }
+            },
+            {
+              "objID": "3a854fec-dd5a-4fcd-b1ff-6b146e4d3789",
+              "type": "LVGLSliderWidget",
+              "left": 228,
+              "top": 410,
+              "width": 150,
+              "height": 10,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "4a4cd844-3ef8-4670-a314-daaf501149af",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [
+                {
+                  "objID": "5372d46d-7796-458a-b8db-be37e4065abc",
+                  "eventName": "PRESSED",
+                  "handlerType": "action",
+                  "action": "buttonClickAction_3",
+                  "userData": 0
+                }
+              ],
+              "identifier": "Slider test",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "px",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlag": true,
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "8ae409ad-e2a5-4a47-dd19-9d8a9e5fde79"
+              },
+              "min": 0,
+              "max": 100,
+              "mode": "NORMAL",
+              "value": 25,
+              "valueType": "literal",
+              "valueLeft": 0,
+              "valueLeftType": "literal",
+              "enableAnimation": false
             }
           ],
           "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER",

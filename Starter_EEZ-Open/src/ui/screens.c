@@ -11,7 +11,7 @@
 objects_t objects;
 lv_obj_t *tick_value_change_obj;
 
-static void event_handler_cb_main_obj0(lv_event_t *e) {
+static void event_handler_cb_main_wake_up_screen(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
     if (event == LV_EVENT_LONG_PRESSED) {
@@ -20,7 +20,7 @@ static void event_handler_cb_main_obj0(lv_event_t *e) {
     }
 }
 
-static void event_handler_cb_main_button_click(lv_event_t *e) {
+static void event_handler_cb_main_click_count_up(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
     if (event == LV_EVENT_PRESSED) {
@@ -29,12 +29,21 @@ static void event_handler_cb_main_button_click(lv_event_t *e) {
     }
 }
 
-static void event_handler_cb_main_button_click_1(lv_event_t *e) {
+static void event_handler_cb_main_put_to_sleep(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)1;
         action_button_click_action_1(e);
+    }
+}
+
+static void event_handler_cb_main_slider_test(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        action_button_click_action_3(e);
     }
 }
 
@@ -47,11 +56,12 @@ void create_screen_main() {
     {
         lv_obj_t *parent_obj = obj;
         {
+            // Wake up screen
             lv_obj_t *obj = lv_btn_create(parent_obj);
-            objects.obj0 = obj;
+            objects.wake_up_screen = obj;
             lv_obj_set_pos(obj, 0, 0);
             lv_obj_set_size(obj, 792, 480);
-            lv_obj_add_event_cb(obj, event_handler_cb_main_obj0, LV_EVENT_ALL, flowState);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_wake_up_screen, LV_EVENT_ALL, flowState);
             lv_obj_set_style_bg_opa(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_text_opa(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
             {
@@ -80,12 +90,12 @@ void create_screen_main() {
             lv_obj_set_style_text_font(obj, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         {
-            // buttonClick
+            // Click count up
             lv_obj_t *obj = lv_btn_create(parent_obj);
-            objects.button_click = obj;
+            objects.click_count_up = obj;
             lv_obj_set_pos(obj, 36, 89);
             lv_obj_set_size(obj, 102, 40);
-            lv_obj_add_event_cb(obj, event_handler_cb_main_button_click, LV_EVENT_ALL, flowState);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_click_count_up, LV_EVENT_ALL, flowState);
             {
                 lv_obj_t *parent_obj = obj;
                 {
@@ -110,12 +120,12 @@ void create_screen_main() {
             lv_obj_set_style_text_color(obj, lv_color_hex(0xfffdfdfd), LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         {
-            // buttonClick_1
+            // Put to sleep
             lv_obj_t *obj = lv_btn_create(parent_obj);
-            objects.button_click_1 = obj;
+            objects.put_to_sleep = obj;
             lv_obj_set_pos(obj, 36, 394);
             lv_obj_set_size(obj, 149, 40);
-            lv_obj_add_event_cb(obj, event_handler_cb_main_button_click_1, LV_EVENT_ALL, flowState);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_put_to_sleep, LV_EVENT_ALL, flowState);
             {
                 lv_obj_t *parent_obj = obj;
                 {
@@ -128,6 +138,15 @@ void create_screen_main() {
                     lv_obj_set_style_text_font(obj, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
                 }
             }
+        }
+        {
+            // Slider test
+            lv_obj_t *obj = lv_slider_create(parent_obj);
+            objects.slider_test = obj;
+            lv_obj_set_pos(obj, 228, 410);
+            lv_obj_set_size(obj, 150, 10);
+            lv_slider_set_value(obj, 25, LV_ANIM_OFF);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_slider_test, LV_EVENT_ALL, flowState);
         }
     }
 }
