@@ -34,10 +34,19 @@ LGFX::LGFX(void)
     cfg.pin_d14 = GPIO_NUM_48; // R3
     cfg.pin_d15 = GPIO_NUM_45; // R4
 
-    cfg.pin_henable = GPIO_NUM_41;
-    cfg.pin_vsync = GPIO_NUM_40;
-    cfg.pin_hsync = GPIO_NUM_39;
-    cfg.pin_pclk = GPIO_NUM_0;
+// orginal for older boards
+    // cfg.pin_henable = GPIO_NUM_41;
+    // cfg.pin_vsync = GPIO_NUM_40;
+    // cfg.pin_hsync = GPIO_NUM_39;
+    // cfg.pin_pclk = GPIO_NUM_0;
+    
+    cfg.pin_henable = GPIO_NUM_42;
+    cfg.pin_vsync = GPIO_NUM_41;
+    cfg.pin_hsync = GPIO_NUM_40;
+    cfg.pin_pclk = GPIO_NUM_39;
+    
+    
+    
     cfg.freq_write = 15000000;
 
     cfg.hsync_polarity = 0;
