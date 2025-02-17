@@ -81,7 +81,7 @@ cfg.freq_write = 21000000;
     cfg.vsync_back_porch = 8;
 
     // cfg.pclk_active_neg = 1;
-    // cfg.de_idle_high = 0;
+    cfg.de_idle_high = 0;
     cfg.pclk_idle_high = 1;
 
     _bus_instance.config(cfg);
@@ -94,6 +94,7 @@ cfg.freq_write = 21000000;
     cfg.panel_height = 480;
     cfg.offset_x = 0;
     cfg.offset_y = 0;
+    cfg.bus_shared = false;
 
     _panel_instance.config(cfg);
   }
